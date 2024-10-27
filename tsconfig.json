@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",            /* Directorio de salida */
+        "rootDir": "./src/",            /* Directorio de entrada */
+        "lib": ["ESNext"],              /* Librerias a utilizar */
+        "strict": false,                /* Habilita el check estricto de todos los tipados, no permite any */
+        "sourceMap": false,             /* Genera archivos .map */
+        "esModuleInterop": true,        /* Habilita la interoperabilidad entre CommonJS y ES6 */
+        "declaration": true,            /* Genera archivos .d.ts */
+    },
+    "include": ["src/**/*.ts"],         /* Archivos a incluir */
+}
