@@ -1,10 +1,9 @@
 import express, {Request, Response} from 'express'
+import router from './router'
 
 const server = express()
 
 // Routing
-server.get('/', (req: Request, res: Response) => {
-    res.send('Hello World')
-})
+server.use('/products', router)
 
 export default server
