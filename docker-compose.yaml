@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  local.postgres:
+    image: postgres
+    volumes:
+      - postgres_db_data_store:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pguser
+
+volumes:
+  postgres_db_data_store:
+    external: true
+    name: postgres_db_data_store
